@@ -12,17 +12,25 @@
 
     <form >
       <label for="fname">Income:</label><br>
-      <input type="text" required id="income" name="income" value="30"><br>
+      <input type="number" required id="income" name="income" value="30000"><br>
       <label for="lname">Age</label><br>
-      <input type="text" required id="age" name="age" ><br><br>
+      <input type="number" required id="age" name="age" ><br><br>
       <label for="fname">Gender</label><br>
-      <input type="text" required id="gender" name="gender" ><br>
+      <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label> <br>
+      
+      
       <label for="lname">Marital status</label><br>
-      <input type="text" required id="status" name="status" ><br>
-      <label for="fname">Dependents</label><br>
-      <input type="text" required id="dependents" name="dependents" ><br>
+      <input type="radio" id="married" name="status" value="married">
+  <label for="married">Married</label>
+  <input type="radio" id="single" name="status" value="single">
+  <label for="single">Single</label> <br>
+      <label for="fname">Dependents(includes you)</label><br>
+      <input type="number" required id="dependents" name="dependents" ><br>
       <label for="fname">Avg expense per person</label><br>
-      <input type="text" required id="person" name="person" ><br>
+      <input type="number" required id="person" name="person" ><br>
       
       <!-- <input type="submit" onclick="myFunction()" value="Submit"> -->
     </form> 

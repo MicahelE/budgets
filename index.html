@@ -5,32 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budgets</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h2>Budget Calculator</h2>
 
     <form >
       <label for="fname">Income:</label><br>
-      <input type="text" id="income" name="income" value="30"><br>
+      <input type="text" required id="income" name="income" value="30"><br>
       <label for="lname">Age</label><br>
-      <input type="text" id="age" name="age" ><br><br>
+      <input type="text" required id="age" name="age" ><br><br>
       <label for="fname">Gender</label><br>
-      <input type="text" id="gender" name="gender" ><br>
+      <input type="text" required id="gender" name="gender" ><br>
       <label for="lname">Marital status</label><br>
-      <input type="text" id="status" name="status" ><br>
+      <input type="text" required id="status" name="status" ><br>
       <label for="fname">Dependents</label><br>
-      <input type="text" id="dependents" name="dependents" ><br>
+      <input type="text" required id="dependents" name="dependents" ><br>
       <label for="fname">Avg expense per person</label><br>
-      <input type="text" id="person" name="person" ><br>
+      <input type="text" required id="person" name="person" ><br>
       
       <!-- <input type="submit" onclick="myFunction()" value="Submit"> -->
     </form> 
-    
-    <button  type="button" onclick="myFunction()" value="Submit"></button>
+    <br>
+    <button  type="button" onclick="myFunction()" value="Submit">Submit</button>
     <p>Click the "Submit" button</p>
 
     <h3>Results</h3>
-    <p id="result">This the results <span id="output"></span> </p>
+    <p id="result"> <span id="output"></span> </p>
     <script src="script.js"></script>
 </body>
 </html>
